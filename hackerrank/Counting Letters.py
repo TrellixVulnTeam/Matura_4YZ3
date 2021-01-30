@@ -24,12 +24,21 @@ Sample Output 2
 
 a
 """
-x = input("Enter sentance")
-tab = []
-ans = 0
-for i in range(len(x)):
-    tab.append(x[i])
-for i in range(len(x)):
-    if (x[0] == tab[i]):
-         ans += 1
+alf=input()
+alf=alf.lower()
+alf =list(alf)
+suma,new_suma = 0,0
+litera=""
+for x in range(len(alf)):
+    suma = alf.count(alf[x])
+    #print(alf[x])
+    if suma>new_suma:
+        new_suma = suma
+        litera = alf[x]
+    else:
+        continue
+print(litera)
+
+
+
 
