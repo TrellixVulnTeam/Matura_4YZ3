@@ -24,21 +24,22 @@ Sample Output 2
 
 a
 """
-alf=input()
-alf=alf.lower()
-alf =list(alf)
-suma,new_suma = 0,0
-litera=""
+import string
+
+alf = input()
+alf = alf.lower()
+alf = list(alf)
+alf.sort()
+alf.reverse()
+suma, new_suma = 0, 0
+litera = ""
+print(alf)
 for x in range(len(alf)):
-    suma = alf.count(alf[x])
-    #print(alf[x])
-    if suma>new_suma:
-        new_suma = suma
-        litera = alf[x]
+    if (alf[x] not in string.ascii_lowercase):
+        break
     else:
-        continue
+        suma = alf.count(alf[x])
+        if suma > new_suma:
+            new_suma = suma
+            litera = alf[x]
 print(litera)
-
-
-
-
