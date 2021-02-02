@@ -25,21 +25,18 @@ Sample Output 2
 a
 """
 import string
-
 alf = input()
 alf = alf.lower()
 alf = list(alf)
-alf.sort()
-alf.reverse()
+alf.sort(reverse=True)
 suma, new_suma = 0, 0
 litera = ""
-print(alf)
 for x in range(len(alf)):
     if (alf[x] not in string.ascii_lowercase):
         break
     else:
         suma = alf.count(alf[x])
-        if suma > new_suma:
+        if suma >= new_suma:
             new_suma = suma
             litera = alf[x]
 print(litera)

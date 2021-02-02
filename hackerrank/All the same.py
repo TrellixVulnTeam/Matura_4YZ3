@@ -1,7 +1,7 @@
-z = int(input("Enter n "))
+z = int(input(""))
 tab = []
 for i in range(z):
-    tab.append(input("Enter List "))
+    tab.append(input(""))
     print(tab[i])
 
 result = all(element == tab[0] for element in tab)
