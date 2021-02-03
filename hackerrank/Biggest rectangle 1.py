@@ -7,12 +7,12 @@ for x in range(n):
 print(la)
 counter=0
 for i in range(1,len(la)):
-    for x in range(1,len(la)):
+    for j in range(1,len(la)):
         if i+1==len(la):
             break
         else:
             counter+=1
-            if la[i+1]>=x:
+            if la[i+1]>=j:
                 lb[i]=counter
 print(lb)
 
