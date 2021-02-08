@@ -39,4 +39,4 @@ for x in range(len(alf)):
         if suma >= new_suma:
             new_suma = suma
             litera = alf[x]
-print(litera)
+print(litera,new_suma)
