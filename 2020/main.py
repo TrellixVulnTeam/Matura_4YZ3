@@ -9,7 +9,7 @@ def pierwsza(n):
             t = False
             break
     return t
-plik = open("przyklad.txt", "r")
+plik = open("pary.txt", "r")
 liczby = []
 znaki = []
 parzyste = []

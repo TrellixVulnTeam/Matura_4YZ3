@@ -1,3 +1,3 @@
-t=[1,3,5,2,3,4,3,2,3]
-l=list(set(t))
-print(l)
+a="12342135432532325325"
+for x in range(len(a)):
+    print(a[x])
